@@ -1,0 +1,22 @@
+[package]
+name = "queues_over_logs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+async-trait = "0.1.80"
+axum = "0.7.5"
+axum-macros = "0.4.1"
+serde = { version = "1.0.203", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["rt-multi-thread", "macros", "fs", "io-util"] }
+uuid = { version = "1.8.0", features = ["v4"] }
+
+[dev-dependencies]
+http = "1.1.0"
+http-body-util = "0.1.1"
+mime = "0.3.17"
+serde_json = "1.0.117"
+tower = "0.4.13"
